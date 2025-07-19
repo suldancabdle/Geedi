@@ -3,29 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>La dag Appka aa rabtaa</title>
+  <title>Ku Dajiso App-ka Betting-ga</title>
   <style>
     :root {
-      --primary: #4361ee;
-      --secondary: #3a0ca3;
-      --accent: #f72585;
+      --primary: #1a5f1a;
+      --secondary: #0d3d0d;
+      --accent: #ffd700;
       --light: #f8f9fa;
       --dark: #212529;
-      --whatsapp: #25D366;
     }
     
     body {
       margin: 0;
       padding: 0;
       font-family: 'Poppins', 'Segoe UI', sans-serif;
-      background-color: #f5f7ff;
+      background-color: #f0f8f0;
       color: var(--dark);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-image: radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.1) 0%, rgba(248, 249, 250, 0.1) 90%);
+      background-image: radial-gradient(circle at 10% 20%, rgba(26, 95, 26, 0.1) 0%, rgba(248, 249, 250, 0.1) 90%);
     }
 
     .container {
@@ -36,6 +35,7 @@
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       margin: 30px 0;
+      border: 2px solid var(--accent);
     }
 
     h1 {
@@ -43,9 +43,7 @@
       margin-bottom: 15px;
       color: var(--secondary);
       font-weight: 700;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     }
 
     .subtitle {
@@ -53,6 +51,18 @@
       color: #6c757d;
       margin-bottom: 30px;
       line-height: 1.6;
+    }
+
+    .bonus-badge {
+      background-color: var(--accent);
+      color: var(--secondary);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .btn-container {
@@ -78,25 +88,15 @@
       transition: all 0.3s ease;
       width: 100%;
       max-width: 350px;
-      box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+      box-shadow: 0 4px 10px rgba(26, 95, 26, 0.3);
       position: relative;
       overflow: hidden;
     }
 
-    .btn-whatsapp {
-      background-color: var(--whatsapp);
-      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
-    }
-
     .btn:hover {
-      background-color: #3a56e8;
+      background-color: var(--secondary);
       transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(67, 97, 238, 0.4);
-    }
-
-    .btn-whatsapp:hover {
-      background-color: #128C7E;
-      box-shadow: 0 6px 15px rgba(18, 140, 126, 0.4);
+      box-shadow: 0 6px 15px rgba(13, 61, 13, 0.4);
     }
 
     .btn:active {
@@ -122,6 +122,18 @@
     .btn-icon {
       margin-right: 10px;
       font-size: 1.2em;
+    }
+
+    .btn-bonus {
+      position: absolute;
+      right: 10px;
+      top: -10px;
+      background-color: var(--accent);
+      color: var(--secondary);
+      padding: 3px 8px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      font-weight: bold;
     }
 
     @media (max-width: 600px) {
@@ -154,42 +166,44 @@
     .btn:nth-child(3) { animation-delay: 0.3s; }
     .btn:nth-child(4) { animation-delay: 0.4s; }
     .btn:nth-child(5) { animation-delay: 0.5s; }
-    .btn:nth-child(6) { animation-delay: 0.6s; }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <h1>Halkaan kala dag Appka Dhan</h1>
-    <p class="subtitle">Dooro barnaamijka oo la deg Appka aa u baahan tahay.</p>
-    <p class="subtitle"><em>Choose the platform and download the app you need."</em></p>
+    <h1>Ku Dajiso App-ka Betting-ga</h1>
+    <p class="subtitle">Dooro barnaamijka aad jeceshahay oo ku bilow inaad hesho dakhli maalin kasta!</p>
+    <p class="subtitle"><em>Choose your favorite betting platform and start earning today!</em></p>
 
-    <!-- Referral Buttons -->
+    <div class="bonus-badge">100% Welcome Bonus!</div>
+
+    <!-- Betting App Buttons -->
     <div class="btn-container">
       <a href="https://referral-link.com/1xbet" class="btn" target="_blank">
         <i class="fas fa-download btn-icon"></i>
-        Dajiso 1xBet / Get 1xBet
+        Dajiso 1xBet
+        <span class="btn-bonus">$50</span>
       </a>
       <a href="https://lb-aff.com/L?tag=d_1678573m_66803c_&site=1678573&ad=66803" class="btn" target="_blank">
         <i class="fas fa-download btn-icon"></i>
-        Dajiso Linebet / Get Linebet
+        Dajiso Linebet
+        <span class="btn-bonus">$30</span>
       </a>
       <a href="https://affiliatecontrol-api.com/affiliates/mobile-apps/3e778fc9-a76f-4e82-ad3e-adf2c56623ad/download?customer_id=betwinner&access_token=d3fb00dc73154172b85f409cacc5ce83&affiliate_offer_id=52857661-e30c-41db-91c2-cd3769076720&site_id=betwinner" class="btn" target="_blank">
         <i class="fas fa-download btn-icon"></i>
-        Dajiso Betwinner / Get Betwinner
+        Dajiso Betwinner
+        <span class="btn-bonus">100%</span>
       </a>
       <a href="https://refpa3665.com/L?tag=d_1831229m_53873c_&site=1831229&ad=53873" class="btn" target="_blank">
         <i class="fas fa-download btn-icon"></i>
-        Dajiso Melbet / Get Melbet
+        Dajiso Melbet
+        <span class="btn-bonus">$100</span>
       </a>
       <a href="https://refpa43000.com/L?tag=d_3453580m_68383c_&site=3453580&ad=68383" class="btn" target="_blank">
         <i class="fas fa-download btn-icon"></i>
-        Dajiso Winwin / Get Winwin
-      </a>
-      <a href="https://wa.me/252613798686" class="btn btn-whatsapp" target="_blank">
-        <i class="fab fa-whatsapp btn-icon"></i>
-        WhatsApp Geedi Exchange
+        Dajiso Winwin
+        <span class="btn-bonus">$75</span>
       </a>
     </div>
   </div>
